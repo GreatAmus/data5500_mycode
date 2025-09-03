@@ -68,10 +68,12 @@ def format_month_year(d : str):
 def print_stat(intro_string, stat, format_method): 
     if stat is None:     # The data anlaysis result matches the expected error message
         print(intro_string, 'No data found for this statistic.')
-    elif format_method == 'data': # Format the data as Mon DD, YYYY
+    elif format_method == 'date': # Format the data as Mon DD, YYYY
         print(intro_string, format_date(stat))
-    else:                   # Format the data as Mon YYYY
+    elif format_method == 'month': # Format the data as Mo YYYY
         print(intro_string, format_month_year(stat))
+    else:
+        print(intro_string, stat)
     return
 
 # Gather stat information and print the stat information per state

@@ -95,7 +95,7 @@ class CovidData:
         if self.nodata: # Chat suggested adding a handler where the data is empty
             return None
         zero_days = [d['date'] for d in self.data if d['positiveIncrease']== 0]
-        return max(zero_days) if zero_days else 'None'
+        return max(zero_days) if zero_days else None
     
     # Highest month-year of cases
     def month_highest_increase(self):
