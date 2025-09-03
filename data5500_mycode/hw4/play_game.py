@@ -42,8 +42,10 @@ from Player import *
  Parameters: Deck = A deck of cards based on the DeckofCards class
 '''
 def setup(deck):
+    print("\nDeck before shuffling:")
     deck.print_deck()
     deck.shuffle_deck()
+    print("\nDeck after shuffling:")
     deck.print_deck()
     return deck
 
