@@ -14,3 +14,4 @@ cp hw1 hw0
 dir
 cp hello.py hello2.pyh
 cp hello.py hello2.py
+pip install numpy

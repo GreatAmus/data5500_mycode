@@ -23,6 +23,9 @@ Programming Requirements
 
 Chatgpt link:
 https://chatgpt.com/share/68b7ad55-ef54-8010-be66-4f7bff88b3f9
+Checking to see if chat thinks I met the requirements:
+https://chatgpt.com/share/68b7ae6c-868c-8010-9b7f-8c7ed35a4274
+
 '''
 
 from pathlib import Path
@@ -61,13 +64,11 @@ def format_month_year(d : str):
 # AS does not have any data so we need a message if the data analysis cannot be compeleted
 # Parameters:   intro-string: The string that explains the stat gathered
 #               stat: results of the data analysis
-#               no_data: what msg the data anlysis returns if it did not find relevant data
-#               no_data_msg: what to print if the data field is empty
-#               format_index: how to format the printed stat 
-def print_stat(intro_string, stat, no_data, no_data_msg, format_index): 
-    if stat == no_data:     # The data anlaysis result matches the expected error message
-        print(intro_string, no_data_msg)
-    elif format_index == 0: # Format the data as Mon DD, YYYY
+#               format_method: how to format the printed stat 
+def print_stat(intro_string, stat, format_method): 
+    if stat is None:     # The data anlaysis result matches the expected error message
+        print(intro_string, 'No data found for this statistic.')
+    elif format_method == 'data': # Format the data as Mon DD, YYYY
         print(intro_string, format_date(stat))
     else:                   # Format the data as Mon YYYY
         print(intro_string, format_month_year(stat))
@@ -82,35 +83,25 @@ def gather_stats(data, file_path):
     question3 = "Most recent date with no new covid cases:"
     question4 = "Month and Year, with the highest new number of covid cases:"
     question5 = "Month and Year, with the lowest new number of covid cases:"
-    no_data = "This state did not report any covid cases"
 
     # If there is data, print the answer to the requested stat and answer to the requested stat
-    if data.data_exists():
-        data_analysis = {
-                'State': data.state,
-                'Average': data.daily_average(),
-                'Highest': data.highest_day(),
-                'No covid': data.no_covid(),
-                'Increase': data.month_highest_increase(),
-                'Lowest': data.month_lowest_increase()
-            }
-        print(question1 , data_analysis['Average'])
-        print_stat(question2, data_analysis['Highest'], "", no_data, 0)
-        print_stat(question3, data_analysis['No covid'], "None", "All days had at least one 1 new COVID case.", 0)
-        print_stat(question4, data_analysis['Increase'], "", no_data, 1)
-        print_stat(question5, data_analysis['Lowest'], "", no_data, 1)
 
-        data.save_analysis(file_path, data_analysis)   # Save the analysis to a file
-        
+    data_analysis = {
+            'State': data.state,
+            'Average': data.daily_average(),
+            'Highest': data.highest_day(),
+            'No covid': data.no_covid(),
+            'Increase': data.month_highest_increase(),
+            'Lowest': data.month_lowest_increase()
+        }
+    print(question1 , data_analysis['Average'])
+    print_stat(question2, data_analysis['Highest'], 'date')
+    print_stat(question3, data_analysis['No covid'], 'date')
+    print_stat(question4, data_analysis['Increase'], 'month')
+    print_stat(question5, data_analysis['Lowest'], 'month')
 
-    # If the data was empty, return the appropriate message
-    else:
-        print(question1,no_data)
-        print(question2, no_data)
-        print(question3, no_data)
-        print(question4, no_data)
-        print(question5, no_data)
-
+    data.save_analysis(file_path, data_analysis)   # Save the analysis to a file
+    
     print()
     return
 
