@@ -30,7 +30,6 @@ https://chatgpt.com/share/68b7ae6c-868c-8010-9b7f-8c7ed35a4274
 
 from pathlib import Path
 from CovidData import *
-import os
 
 # Constants - Colors for formating text and months for dates
 MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -39,18 +38,18 @@ COLORS = {'bold':'\033[1m', 'end': '\033[0m'}
 # I stored all of the state values in a separate file to make it easy to use. This funciton reads the state information into a list
 # file-path is where the directory of the state file
 def get_states(file_path):
-    with open(f"{file_path}/states.txt") as file:
+    with Path(f"{file_path}/states_territories.txt").open() as file:
         states = [state.rstrip() for state in file]
     return states
 
 # The API stores dates as YYYYMMDD
 # The format_date helper function takes a date from the API and converts it to Month DD, YYYY
 def format_date(d : str):
-    d = str(d)          # The API returns floats so this needs to be converted
-    year = d[0:4]       # Strip the date into its coponents
+    d = str(d)          # The API returns a number so this needs to be converted
+    year = d[0:4]       # Strip the date into its 3 components
     month = int(d[4:6])
     day = int(d[6:])
-    return(f"{MONTHS[month-1]} {day}, {year}")  # Format the date nad return it
+    return(f"{MONTHS[month-1]} {day}, {year}")  # Format the date and return it
 
 # The API stores dates as YYYYMMDD
 # The format_month_year helper function takes a date from the API and converts it to Month YYYY
@@ -110,9 +109,9 @@ def gather_stats(data, file_path):
 # Get the covid informaiton for a specific state, analyze the data, save the data
 def print_covid_info(state, file_path):
     data = CovidData(state)     # create an object for the state       
-    data.retrieve_data()        # Use the API to get teh data
+    data.retrieve_data()        # Use the API to get the data
     gather_stats(data, file_path)  # Gather the stats and print them
-    data.save_data(file_path)   # Save teh data to a file
+    data.save_data(file_path)   # Save the data to a file
     return
 
 # get the code's relative path for saving json files and loading state info
@@ -122,7 +121,7 @@ file_path = Path(__file__).parent
 states = get_states(file_path)
 
 # print required header
-print("Covid confirmed statistics")
+print("Covid confirmed cases statistics")
 
 # loop over each state, loading the info and printin the stats
 for s in states:

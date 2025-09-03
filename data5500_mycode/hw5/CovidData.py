@@ -39,7 +39,7 @@ class CovidData:
     def data(self):
         return self.__data
 
-    # Parse teh data into a sublist based on months/years
+    # Parse the data into a sublist based on months/years
     # Required for analysis where we want to examine groups of data instead of daily rates
     def create_sublist(self):
         key = ""
@@ -60,7 +60,7 @@ class CovidData:
     def data_exists(self):
         return self.daily_average() > 0
 
-    # Save teh raw jason data to a file
+    # Save the raw JSON data to a file
     def save_data(self, file_path):
         with open(f"{file_path}/{self.state}.json", "w") as file:
             json.dump(self.data, file, indent = 3)
