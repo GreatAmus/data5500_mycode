@@ -20,6 +20,9 @@ Programming Requirements
     -The JSON data must be converted to a Python dictionary, and then the dictionary elements will be used to aggregate the data and perform the calculations.
     -Save the json data in a json file for each state/terrotitory as <state>.json
     -The program should produce:  the output shown above, and the json files.
+
+Chatgpt link:
+https://chatgpt.com/share/68b7ad55-ef54-8010-be66-4f7bff88b3f9
 '''
 
 from pathlib import Path
@@ -71,7 +74,7 @@ def print_stat(intro_string, stat, no_data, no_data_msg, format_index):
     return
 
 # Gather stat information and print the stat information per state
-def gather_stats(data):
+def gather_stats(data, file_path):
     # These are the data anlaytics requested by the problem along with the specified header
     print(f"{COLORS['bold']}State name: {data.state.upper()}{COLORS['end']}")
     question1 = "Average number of new daily confirmed cases for the entire state dataset:"
@@ -79,24 +82,34 @@ def gather_stats(data):
     question3 = "Most recent date with no new covid cases:"
     question4 = "Month and Year, with the highest new number of covid cases:"
     question5 = "Month and Year, with the lowest new number of covid cases:"
+    no_data = "This state did not report any covid cases"
 
     # If there is data, print the answer to the requested stat and answer to the requested stat
     if data.data_exists():
-        no_data = "This state did not report any covid cases"
-        print(question1 ,data.daily_average())
-        print_stat(question2, data.highest_day(), "", no_data, 0)
-        print_stat(question3, data.no_covid(), "None", "All days had at least one 1 new COVID case.", 0)
-        print_stat(question4, data.month_highest_increase(), "", no_data, 1)
-        print_stat(question5, data.month_lowest_increase(), "", no_data, 1)
+        data_analysis = {
+                'State': data.state,
+                'Average': data.daily_average(),
+                'Highest': data.highest_day(),
+                'No covid': data.no_covid(),
+                'Increase': data.month_highest_increase(),
+                'Lowest': data.month_lowest_increase()
+            }
+        print(question1 , data_analysis['Average'])
+        print_stat(question2, data_analysis['Highest'], "", no_data, 0)
+        print_stat(question3, data_analysis['No covid'], "None", "All days had at least one 1 new COVID case.", 0)
+        print_stat(question4, data_analysis['Increase'], "", no_data, 1)
+        print_stat(question5, data_analysis['Lowest'], "", no_data, 1)
+
+        data.save_analysis(file_path, data_analysis)   # Save the analysis to a file
+        
 
     # If the data was empty, return the appropriate message
     else:
-        warning = "This state did not provide covid data."
-        print(question1,warning)
-        print(question2, warning)
-        print(question3, warning)
-        print(question4, warning)
-        print(question5, warning)
+        print(question1,no_data)
+        print(question2, no_data)
+        print(question3, no_data)
+        print(question4, no_data)
+        print(question5, no_data)
 
     print()
     return
@@ -105,7 +118,7 @@ def gather_stats(data):
 def print_covid_info(state, file_path):
     data = CovidData(state)     # create an object for the state       
     data.retrieve_data()        # Use the API to get teh data
-    gather_stats(data)          # Gather the stats and print them
+    gather_stats(data, file_path)  # Gather the stats and print them
     data.save_data(file_path)   # Save teh data to a file
     return
 
