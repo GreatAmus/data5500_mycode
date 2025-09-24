@@ -5,7 +5,7 @@ Functions include saving data and analysing data
 '''
 
 import json
-import requests
+import cloudscraper # pip install cloudscraper
 
 class CovidData:
     def __init__(self, state):
@@ -52,7 +52,11 @@ class CovidData:
     # Retreive data from the API and parse it into month/year data
     def retrieve_data(self):
         self.dict = {}
-        self.__data = requests.get(f"{self.base_api}/v1/states/{self.state}/daily.json").json()
+        scraper = cloudscraper.create_scraper()
+        url = f"https://api.covidtracking.com/v1/states/{self.state}/daily.json"
+        response = scraper.get(url)
+        self.__data = response.json()
+
         self.__month_data = self.create_sublist()
         self.nodata = not self.data_exists()
 

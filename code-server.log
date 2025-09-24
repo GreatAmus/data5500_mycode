@@ -1,19 +1,19 @@
-[2025-09-09T17:05:59.164Z] info  code-server 4.103.1 fbaadbcfbc16401327e28bd5df3040261977a540
-[2025-09-09T17:05:59.176Z] info  Using user-data-dir /root/.local/share/code-server
-[2025-09-09T17:05:59.259Z] info  Using config file /home/ubuntu/.config/code-server/config.yaml
-[2025-09-09T17:05:59.260Z] info  HTTPS server listening on https://0.0.0.0/
-[2025-09-09T17:05:59.260Z] info    - Authentication is enabled
-[2025-09-09T17:05:59.260Z] info      - Using password from /home/ubuntu/.config/code-server/config.yaml
-[2025-09-09T17:05:59.260Z] info    - Using certificate for HTTPS: /home/ubuntu/.config/code-server/selfsigned.crt
-[2025-09-09T17:05:59.260Z] info  Session server listening on /root/.local/share/code-server/code-server-ipc.sock
-[17:08:11] 
+[2025-09-24T00:08:31.358Z] info  code-server 4.103.1 fbaadbcfbc16401327e28bd5df3040261977a540
+[2025-09-24T00:08:31.359Z] info  Using user-data-dir /root/.local/share/code-server
+[2025-09-24T00:08:31.421Z] info  Using config file /home/ubuntu/.config/code-server/config.yaml
+[2025-09-24T00:08:31.421Z] info  HTTPS server listening on https://0.0.0.0/
+[2025-09-24T00:08:31.422Z] info    - Authentication is enabled
+[2025-09-24T00:08:31.422Z] info      - Using password from /home/ubuntu/.config/code-server/config.yaml
+[2025-09-24T00:08:31.422Z] info    - Using certificate for HTTPS: /home/ubuntu/.config/code-server/selfsigned.crt
+[2025-09-24T00:08:31.422Z] info  Session server listening on /root/.local/share/code-server/code-server-ipc.sock
+[00:10:09] 
 
 
 
 
-[17:08:11] Extension host agent started.
-File not found: /var/app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
+[00:10:10] Extension host agent started.
 File not found: /var/app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
-[17:08:14] [<unknown>][50701b2a][ManagementConnection] New connection established.
-[17:08:17] [<unknown>][40c4f298][ExtensionHostConnection] New connection established.
-[17:08:18] [<unknown>][40c4f298][ExtensionHostConnection] <10677> Launched Extension Host Process.
+File not found: /var/app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
+[00:10:13] [<unknown>][e961786a][ManagementConnection] New connection established.
+[00:10:15] [<unknown>][0c56889c][ExtensionHostConnection] New connection established.
+[00:10:16] [<unknown>][0c56889c][ExtensionHostConnection] <19411> Launched Extension Host Process.

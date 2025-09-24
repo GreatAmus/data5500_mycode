@@ -15,3 +15,4 @@ dir
 cp hello.py hello2.pyh
 cp hello.py hello2.py
 pip install numpy
+pip install cloudscraper
