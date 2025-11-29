@@ -31,7 +31,8 @@ from AutoTrader import AutoTrader
 from dotenv import load_dotenv
 
 # I previously used relative environments but it was causing issues with the cron job. I switched to an excplicit path to make the cron job work
-PATH = "/home/ubuntu/data5500_mycode/Final Project"
+#PATH = "/home/ubuntu/data5500_mycode/Final Project"
+PATH = os.path.dirname(os.path.abspath(__file__))
 
 # Load environment variables that are static but important information 
 load_dotenv()

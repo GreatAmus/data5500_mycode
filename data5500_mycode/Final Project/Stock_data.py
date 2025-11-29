@@ -60,7 +60,7 @@ class Stock_data:
                 read_data = line.split(',')                 # data is in rows with a "date, value" format
                 data[read_data[0]] = float(read_data[1])    # store the data with the date as the key and value as the item
         self.data = data                                    
-        self.last_update = get_last_date()
+        self.last_update = self.get_last_date()
 
         return 
 
@@ -74,14 +74,14 @@ class Stock_data:
         # If the file does not exist, write all of the data to the file
         if not os.path.exists(self.path) or self.last_update is None:
             with open(self.path, "w") as f:
-                for date in self.data:
-                    f.write(f"{date},{self.data[date]}\n")
+                for dt in self.data:
+                    f.write(f"{dt},{self.data[date]}\n")
         else:
             # if the file exists, just append the new info based on the self.last_update information
             with open(self.path, "a") as f:
-                for date in self.data:
-                    if date > self.last_update:
-                        f.write(f"{date},{self.data[date]}\n")
+                for dt in self.data:
+                    if self.last_update is None or date.fromisoformat(dt) > self.last_update:
+                        f.write(f"{dt},{self.data[date]}\n")
 
         self.last_update = self.get_last_date()
         return

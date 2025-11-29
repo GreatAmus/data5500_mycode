@@ -52,7 +52,7 @@ class Strategy:
 
 # Function:     data_list
 # Parameters:   data = a dictionary of values. The key is the date and the value is the stock price
-#               start_data = the date when we should start evaluating the data. By default this is the entire set of data
+#               start_date = the date when we should start evaluating the data. By default this is the entire set of data
 # Purpose:      turn a dictionary into a list, sorted by stock price date 
 # 
     def data_list(self, data: dict, start_date: datetime.date):
@@ -215,7 +215,7 @@ class Strategy:
         if self.__sma_fast > self.__sma_slow:
             temp = self.__sma_fast
             self.__sma_fast = self.__sma_slow
-            self.__sma_slow = self.__sma_fast
+            self.__sma_slow = temp
         
         # loop over all available data
         for i in range(1, n):

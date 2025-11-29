@@ -56,12 +56,11 @@ class Alpaca_API:
 
 # Function:     get_data
 # Parameters:   stock = stock ticker that we will retrieve
-#               start_date = earliest date to pull from the API
 # Purpose:      Access the Alpaca API and returns the data
 #               the data is returned as 'bars'. These bars are broken into dates and values
 #               data is returned as a dictionary with the date as a key and value as the item
 
-    def get_data(self, stock: str, start_date: datetime.date = None):
+    def get_data(self, stock: str):
         stock_api = f"{self.__market_api}/stocks/{stock}/bars"
 
         # Required parameters for Alpaca API

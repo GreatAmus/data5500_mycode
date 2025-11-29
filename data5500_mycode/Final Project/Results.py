@@ -127,4 +127,4 @@ class Results:
 
             # give the user the best recommendation based on the best strategy
             final = signal[stock][best_strategy] or 'HOLD'
-            print(f"\t{'Recommendation':<32} : {final}")
+            print(f"\tYou should {final} {stock} today.")

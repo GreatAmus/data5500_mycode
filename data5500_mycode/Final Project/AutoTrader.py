@@ -159,6 +159,7 @@ class AutoTrader:
     def get_data(self, stock: str):
         # Create a new instance of the stock class to store the stock data
         info = Stock_data(stock, self.file_path)
+        info.load_data()
         last_update = info.get_last_date()
 
         # Find out when the data was last updated
