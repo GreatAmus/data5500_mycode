@@ -1,0 +1,449 @@
+--- AAPL ---
+	Evaluation of Simple Moving Average Crossover:
+		Cash: $-216.41
+		Unrealized $279.06
+		Total: $62.65
+	Evaluation of Mean Reversion:
+		Cash: $10,590.04
+		Unrealized $-13394.880000000001
+		Total: $-2,804.84
+	Evaluation of Relative Strength Index:
+		Cash: $15,269.55
+		Unrealized $-17859.84
+		Total: $-2,590.29
+--- MSFT ---
+	Evaluation of Simple Moving Average Crossover:
+		Cash: $182.75
+		Unrealized $0.0
+		Total: $182.75
+	Evaluation of Mean Reversion:
+		Cash: $18,946.04
+		Unrealized $-22385.67
+		Total: $-3,439.63
+	Evaluation of Relative Strength Index:
+		Cash: $33,434.80
+		Unrealized $-38931.6
+		Total: $-5,496.80
+--- GOOGL ---
+	Evaluation of Simple Moving Average Crossover:
+		Cash: $-150.55
+		Unrealized $319.38
+		Total: $168.83
+	Evaluation of Mean Reversion:
+		Cash: $12,764.41
+		Unrealized $-21717.84
+		Total: $-8,953.43
+	Evaluation of Relative Strength Index:
+		Cash: $19,877.81
+		Unrealized $-33534.9
+		Total: $-13,657.10
+--- AMZN ---
+	Evaluation of Simple Moving Average Crossover:
+		Cash: $-148.57
+		Unrealized $230.49
+		Total: $81.92
+	Evaluation of Mean Reversion:
+		Cash: $11,726.15
+		Unrealized $-15212.34
+		Total: $-3,486.19
+	Evaluation of Relative Strength Index:
+		Cash: $7,854.74
+		Unrealized $-10372.050000000001
+		Total: $-2,517.31
+--- META ---
+	Evaluation of Simple Moving Average Crossover:
+		Cash: $450.17
+		Unrealized $-635.995
+		Total: $-185.82
+	Evaluation of Mean Reversion:
+		Cash: $35,687.34
+		Unrealized $-55967.56
+		Total: $-20,280.22
+	Evaluation of Relative Strength Index:
+		Cash: $49,844.89
+		Unrealized $-85859.325
+		Total: $-36,014.43
+--- NVDA ---
+	Evaluation of Simple Moving Average Crossover:
+		Cash: $-219.32
+		Unrealized $0.0
+		Total: $-219.32
+	Evaluation of Mean Reversion:
+		Cash: $32,031.96
+		Unrealized $-10848.9
+		Total: $21,183.06
+	Evaluation of Relative Strength Index:
+		Cash: $62,501.28
+		Unrealized $-24229.21
+		Total: $38,272.07
+--- TSLA ---
+	Evaluation of Simple Moving Average Crossover:
+		Cash: $234.69
+		Unrealized $0.0
+		Total: $234.69
+	Evaluation of Mean Reversion:
+		Cash: $10,298.31
+		Unrealized $-10578.0
+		Total: $-279.69
+	Evaluation of Relative Strength Index:
+		Cash: $17,740.88
+		Unrealized $-12693.6
+		Total: $5,047.28
+--- DAL ---
+	Evaluation of Simple Moving Average Crossover:
+		Cash: $64.33
+		Unrealized $-64.46
+		Total: $-0.13
+	Evaluation of Mean Reversion:
+		Cash: $970.90
+		Unrealized $-966.8999999999999
+		Total: $4.00
+	Evaluation of Relative Strength Index:
+		Cash: $3,889.79
+		Unrealized $-4512.2
+		Total: $-622.41
+--- XOM ---
+	Evaluation of Simple Moving Average Crossover:
+		Cash: $-35.53
+		Unrealized $0.0
+		Total: $-35.53
+	Evaluation of Mean Reversion:
+		Cash: $1,186.82
+		Unrealized $-807.87
+		Total: $378.95
+	Evaluation of Relative Strength Index:
+		Cash: $4,321.62
+		Unrealized $-3923.94
+		Total: $397.68
+--- PEP ---
+	Evaluation of Simple Moving Average Crossover:
+		Cash: $-25.63
+		Unrealized $0.0
+		Total: $-25.63
+	Evaluation of Mean Reversion:
+		Cash: $-439.69
+		Unrealized $886.56
+		Total: $446.87
+	Evaluation of Relative Strength Index:
+		Cash: $-3,817.32
+		Unrealized $4137.28
+		Total: $319.96
+Best Strategy: Simple Moving Average Crossover
+Best Stock: TSLA
+
+Saved: /home/ubuntu/data5500_mycode/Final Project/results/results.json
+---RECOMMENDATIONS---
+
+==AAPL==
+	Simple Moving Average Crossover: HOLD
+	Mean Reversion: SELL
+	Relative Strength Index: HOLD
+	Recommendation:HOLD
+
+==MSFT==
+	Simple Moving Average Crossover: HOLD
+	Mean Reversion: HOLD
+	Relative Strength Index: HOLD
+	Recommendation:HOLD
+
+==GOOGL==
+	Simple Moving Average Crossover: HOLD
+	Mean Reversion: SELL
+	Relative Strength Index: HOLD
+	Recommendation:HOLD
+
+==AMZN==
+	Simple Moving Average Crossover: HOLD
+	Mean Reversion: HOLD
+	Relative Strength Index: HOLD
+	Recommendation:HOLD
+
+==META==
+	Simple Moving Average Crossover: HOLD
+	Mean Reversion: HOLD
+	Relative Strength Index: HOLD
+	Recommendation:HOLD
+
+==NVDA==
+	Simple Moving Average Crossover: HOLD
+	Mean Reversion: HOLD
+	Relative Strength Index: HOLD
+	Recommendation:HOLD
+
+==TSLA==
+	Simple Moving Average Crossover: HOLD
+	Mean Reversion: HOLD
+	Relative Strength Index: HOLD
+	Recommendation:HOLD
+
+==DAL==
+	Simple Moving Average Crossover: HOLD
+	Mean Reversion: SELL
+	Relative Strength Index: HOLD
+	Recommendation:HOLD
+
+==XOM==
+	Simple Moving Average Crossover: HOLD
+	Mean Reversion: HOLD
+	Relative Strength Index: HOLD
+	Recommendation:HOLD
+
+==PEP==
+	Simple Moving Average Crossover: HOLD
+	Mean Reversion: HOLD
+	Relative Strength Index: SELL
+	Recommendation:HOLD
+
+--- EXECUTING PAPER TRADES ---
+AAPL: Best strategy is to HOLD - no trade made.
+MSFT: Best strategy is to HOLD - no trade made.
+GOOGL: Best strategy is to HOLD - no trade made.
+AMZN: Best strategy is to HOLD - no trade made.
+META: Best strategy is to HOLD - no trade made.
+NVDA: Best strategy is to HOLD - no trade made.
+TSLA: Best strategy is to HOLD - no trade made.
+DAL: Best strategy is to HOLD - no trade made.
+XOM: Best strategy is to HOLD - no trade made.
+PEP: Best strategy is to HOLD - no trade made.
+
+--- PAPER ACCOUNT TOTALS ---
+Cash:         $100,000.00
+Equity:       $100,000.00
+Buying power: $199,694.16
+
+--- AAPL ---
+	Evaluation of Simple Moving Average Crossover
+		Cash       : $     -216.41
+		Unrealized : $      277.60
+		Total      : $       61.18
+	Evaluation of Mean Reversion
+		Cash       : $   10,718.20
+		Unrealized : $  -13,602.16
+		Total      : $   -2,883.96
+	Evaluation of Relative Strength Index
+		Cash       : $   15,269.55
+		Unrealized : $  -17,766.08
+		Total      : $   -2,496.53
+	Best strategy for AAPL: Simple Moving Average Crossover
+
+--- MSFT ---
+	Evaluation of Simple Moving Average Crossover
+		Cash       : $      182.75
+		Unrealized : $        0.00
+		Total      : $      182.75
+	Evaluation of Mean Reversion
+		Cash       : $   18,946.04
+		Unrealized : $  -22,325.18
+		Total      : $   -3,379.14
+	Evaluation of Relative Strength Index
+		Cash       : $   33,434.80
+		Unrealized : $  -38,826.40
+		Total      : $   -5,391.60
+	Best strategy for MSFT: Simple Moving Average Crossover
+
+--- GOOGL ---
+	Evaluation of Simple Moving Average Crossover
+		Cash       : $     -150.55
+		Unrealized : $      320.00
+		Total      : $      169.45
+	Evaluation of Mean Reversion
+		Cash       : $   12,765.03
+		Unrealized : $  -21,760.00
+		Total      : $   -8,994.97
+	Evaluation of Relative Strength Index
+		Cash       : $   19,878.42
+		Unrealized : $  -33,600.00
+		Total      : $  -13,721.58
+	Best strategy for GOOGL: Simple Moving Average Crossover
+
+--- AMZN ---
+	Evaluation of Simple Moving Average Crossover
+		Cash       : $     -148.57
+		Unrealized : $      229.15
+		Total      : $       80.58
+	Evaluation of Mean Reversion
+		Cash       : $   11,810.29
+		Unrealized : $  -15,353.05
+		Total      : $   -3,542.76
+	Evaluation of Relative Strength Index
+		Cash       : $    7,854.74
+		Unrealized : $  -10,311.75
+		Total      : $   -2,457.01
+	Best strategy for AMZN: Simple Moving Average Crossover
+
+--- META ---
+	Evaluation of Simple Moving Average Crossover
+		Cash       : $      450.17
+		Unrealized : $     -633.69
+		Total      : $     -183.52
+	Evaluation of Mean Reversion
+		Cash       : $   35,687.34
+		Unrealized : $  -55,764.72
+		Total      : $  -20,077.38
+	Evaluation of Relative Strength Index
+		Cash       : $   49,844.89
+		Unrealized : $  -85,548.15
+		Total      : $  -35,703.26
+	Best strategy for META: Simple Moving Average Crossover
+
+--- NVDA ---
+	Evaluation of Simple Moving Average Crossover
+		Cash       : $     -219.32
+		Unrealized : $        0.00
+		Total      : $     -219.32
+	Evaluation of Mean Reversion
+		Cash       : $   32,318.35
+		Unrealized : $  -11,171.16
+		Total      : $   21,147.19
+	Evaluation of Relative Strength Index
+		Cash       : $   62,501.28
+		Unrealized : $  -24,144.12
+		Total      : $   38,357.16
+	Best strategy for NVDA: Relative Strength Index
+
+--- TSLA ---
+	Evaluation of Simple Moving Average Crossover
+		Cash       : $      234.69
+		Unrealized : $        0.00
+		Total      : $      234.69
+	Evaluation of Mean Reversion
+		Cash       : $   10,411.03
+		Unrealized : $  -11,089.26
+		Total      : $     -678.23
+	Evaluation of Relative Strength Index
+		Cash       : $   18,028.52
+		Unrealized : $  -13,648.32
+		Total      : $    4,380.20
+	Best strategy for TSLA: Relative Strength Index
+
+--- DAL ---
+	Evaluation of Simple Moving Average Crossover
+		Cash       : $       64.33
+		Unrealized : $      -64.23
+		Total      : $        0.10
+	Evaluation of Mean Reversion
+		Cash       : $      970.67
+		Unrealized : $     -963.52
+		Total      : $        7.15
+	Evaluation of Relative Strength Index
+		Cash       : $    3,889.79
+		Unrealized : $   -4,496.45
+		Total      : $     -606.66
+	Best strategy for DAL: Mean Reversion
+
+--- XOM ---
+	Evaluation of Simple Moving Average Crossover
+		Cash       : $      -35.53
+		Unrealized : $        0.00
+		Total      : $      -35.53
+	Evaluation of Mean Reversion
+		Cash       : $    1,186.82
+		Unrealized : $     -803.70
+		Total      : $      383.11
+	Evaluation of Relative Strength Index
+		Cash       : $    4,321.62
+		Unrealized : $   -3,903.71
+		Total      : $      417.91
+	Best strategy for XOM: Relative Strength Index
+
+--- PEP ---
+	Evaluation of Simple Moving Average Crossover
+		Cash       : $      -25.63
+		Unrealized : $        0.00
+		Total      : $      -25.63
+	Evaluation of Mean Reversion
+		Cash       : $     -439.69
+		Unrealized : $      887.85
+		Total      : $      448.16
+	Evaluation of Relative Strength Index
+		Cash       : $   -3,817.32
+		Unrealized : $    4,143.30
+		Total      : $      325.98
+	Best strategy for PEP: Mean Reversion
+
+Total for sma:	$    264.76
+Total for mean:	$ -17570.84
+Total for rsi:	$-16,895.39
+
+Best strategy: Simple Moving Average Crossover
+Best stock using best strategy: TSLA
+
+Saved: /home/ubuntu/data5500_mycode/Final Project/results/results.json
+---RECOMMENDATIONS---
+
+==AAPL==
+	Simple Moving Average Crossover  : HOLD
+	Mean Reversion                   : SELL
+	Relative Strength Index          : HOLD
+	Recommendation                   : HOLD
+
+==MSFT==
+	Simple Moving Average Crossover  : HOLD
+	Mean Reversion                   : HOLD
+	Relative Strength Index          : HOLD
+	Recommendation                   : HOLD
+
+==GOOGL==
+	Simple Moving Average Crossover  : HOLD
+	Mean Reversion                   : SELL
+	Relative Strength Index          : HOLD
+	Recommendation                   : HOLD
+
+==AMZN==
+	Simple Moving Average Crossover  : HOLD
+	Mean Reversion                   : HOLD
+	Relative Strength Index          : HOLD
+	Recommendation                   : HOLD
+
+==META==
+	Simple Moving Average Crossover  : HOLD
+	Mean Reversion                   : HOLD
+	Relative Strength Index          : HOLD
+	Recommendation                   : HOLD
+
+==NVDA==
+	Simple Moving Average Crossover  : HOLD
+	Mean Reversion                   : HOLD
+	Relative Strength Index          : HOLD
+	Recommendation                   : HOLD
+
+==TSLA==
+	Simple Moving Average Crossover  : HOLD
+	Mean Reversion                   : HOLD
+	Relative Strength Index          : HOLD
+	Recommendation                   : HOLD
+
+==DAL==
+	Simple Moving Average Crossover  : HOLD
+	Mean Reversion                   : SELL
+	Relative Strength Index          : HOLD
+	Recommendation                   : HOLD
+
+==XOM==
+	Simple Moving Average Crossover  : HOLD
+	Mean Reversion                   : HOLD
+	Relative Strength Index          : HOLD
+	Recommendation                   : HOLD
+
+==PEP==
+	Simple Moving Average Crossover  : HOLD
+	Mean Reversion                   : HOLD
+	Relative Strength Index          : SELL
+	Recommendation                   : HOLD
+
+--- EXECUTING PAPER TRADES ---
+AAPL  : Best strategy is to HOLD - no trade made.
+MSFT  : Best strategy is to HOLD - no trade made.
+GOOGL : Best strategy is to HOLD - no trade made.
+AMZN  : Best strategy is to HOLD - no trade made.
+META  : Best strategy is to HOLD - no trade made.
+NVDA  : Best strategy is to HOLD - no trade made.
+TSLA  : Best strategy is to HOLD - no trade made.
+DAL   : Best strategy is to HOLD - no trade made.
+XOM   : Best strategy is to HOLD - no trade made.
+PEP   : Best strategy is to HOLD - no trade made.
+
+--- PAPER ACCOUNT TOTALS ---
+Cash:         $ 100,000.00
+Equity:       $ 100,000.00
+Buying power: $ 199,694.16
