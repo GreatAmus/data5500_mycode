@@ -1,19 +1,19 @@
-[2025-11-29T21:59:27.406Z] info  code-server 4.103.1 fbaadbcfbc16401327e28bd5df3040261977a540
-[2025-11-29T21:59:27.418Z] info  Using user-data-dir /root/.local/share/code-server
-[2025-11-29T21:59:27.486Z] info  Using config file /home/ubuntu/.config/code-server/config.yaml
-[2025-11-29T21:59:27.486Z] info  HTTPS server listening on https://0.0.0.0/
-[2025-11-29T21:59:27.486Z] info    - Authentication is enabled
-[2025-11-29T21:59:27.487Z] info      - Using password from /home/ubuntu/.config/code-server/config.yaml
-[2025-11-29T21:59:27.487Z] info    - Using certificate for HTTPS: /home/ubuntu/.config/code-server/selfsigned.crt
-[2025-11-29T21:59:27.487Z] info  Session server listening on /root/.local/share/code-server/code-server-ipc.sock
-[22:08:49] 
+[2025-12-01T04:17:25.131Z] info  code-server 4.103.1 fbaadbcfbc16401327e28bd5df3040261977a540
+[2025-12-01T04:17:25.133Z] info  Using user-data-dir /root/.local/share/code-server
+[2025-12-01T04:17:25.197Z] info  Using config file /home/ubuntu/.config/code-server/config.yaml
+[2025-12-01T04:17:25.198Z] info  HTTPS server listening on https://0.0.0.0/
+[2025-12-01T04:17:25.198Z] info    - Authentication is enabled
+[2025-12-01T04:17:25.198Z] info      - Using password from /home/ubuntu/.config/code-server/config.yaml
+[2025-12-01T04:17:25.198Z] info    - Using certificate for HTTPS: /home/ubuntu/.config/code-server/selfsigned.crt
+[2025-12-01T04:17:25.199Z] info  Session server listening on /root/.local/share/code-server/code-server-ipc.sock
+[04:17:26] 
 
 
 
 
-[22:08:50] Extension host agent started.
+[04:17:26] Extension host agent started.
 File not found: /var/app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
 File not found: /var/app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
-[22:12:01] [<unknown>][38b12db0][ManagementConnection] New connection established.
-[22:12:04] [<unknown>][55ab9f34][ExtensionHostConnection] New connection established.
-[22:12:04] [<unknown>][55ab9f34][ExtensionHostConnection] <315939> Launched Extension Host Process.
+[04:17:30] [<unknown>][73e46c8f][ManagementConnection] New connection established.
+[04:17:32] [<unknown>][778bc946][ExtensionHostConnection] New connection established.
+[04:17:32] [<unknown>][778bc946][ExtensionHostConnection] <335327> Launched Extension Host Process.

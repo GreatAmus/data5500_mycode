@@ -36,3 +36,4 @@ sudo chown -R ubuntu:ubuntu "/home/ubuntu/data5500_mycode/Final Project"
 sudo chmod -R u+rwX "/home/ubuntu/data5500_mycode/Final Project"
 touch  /home/ubuntu/data5500_mycode/Final\ Project/results/results.json
 /usr/bin/python3 "/home/ubuntu/data5500_mycode/Final Project/main.py"
+cron -l

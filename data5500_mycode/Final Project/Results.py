@@ -77,18 +77,23 @@ class Results:
         best_stock_total = None
 
         if best_strategy is not None:
-            for stock, res in self.__result_data.items():   # loop through stocks and results
+            #loop through the stock and results
+            for stock, res in self.__result_data.items():
+
+                #grab the stock results for the best method
                 strat_res = res.get(best_strategy)
-                if strat_res and 'total' in strat_res:
-                    total = strat_res['total']
-                    if best_stock is None or total > best_stock_total:
-                        best_stock = stock
-                        best_stock_total = total
+                if not strat_res or 'total' not in strat_res:
+                    continue
+
+                total = strat_res['total']
+                if best_stock is None or total > best_stock_total:
+                    best_stock = stock
+                    best_stock_total = total
 
         # print the results of the evaluation
         print()
         print(f"Total for sma:\t${strat_total['sma']:>10,.2f}")
-        print(f"Total for mean:\t${strat_total['mean']:>10.2f}")
+        print(f"Total for mean:\t${strat_total['mean']:>10,.2f}")
         print(f"Total for rsi:\t${strat_total['rsi']:>10,.2f}")
         print()
         self.__result_data['best strategy'] = best_strategy
